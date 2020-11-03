@@ -1,0 +1,17 @@
+html {
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+body {
+  background: #fafafa;
+  color: #333;
+  font-family: -apple-system, system-ui, "Open Sans", sans-serif;
+  font-size: 1rem;
+  min-height: 100vh;
+}
+
+.center {
+  display: grid;
+  place-items: center;
+}

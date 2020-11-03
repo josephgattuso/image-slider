@@ -1,0 +1,27 @@
+{
+  "name": "image-slider",
+  "version": "0.1.0",
+  "description": "A simple image slider written in plain JavaScript",
+  "keywords": [
+    "image-slider",
+    "javascript"
+  ],
+  "author": {
+    "name": "Joseph Gattuso",
+    "email": "joseph.gattuso@gmail.com",
+    "url": "https://josephgattuso.github.io"
+  },
+  "homepage": "https://josephgattuso.github.io/",
+  "main": "./src/index.html",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/josephgattuso/image-slider.git"
+  },
+  "license": "MIT",
+  "engines": {
+    "node": ">=10"
+  },
+  "bugs": {
+    "url": "https://github.com/josephgattuso/image-slider/issues"
+  }
+}
