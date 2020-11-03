@@ -5,15 +5,17 @@ html {
 
 body {
   background: #fafafa;
-  color: #333;
-  font-family: -apple-system, system-ui, "Open Sans", sans-serif;
+  color: #222;
+  font-family: system-ui, sans-serif;
   font-size: 1rem;
-  min-height: 100vh;
 }
 
-.center {
-  display: grid;
-  place-items: center;
+h1 {
+  text-align: center;
+}
+
+img {
+  display: block;
 }
 
 .slider {
@@ -21,16 +23,50 @@ body {
   flex-direction: column;
   margin: 0 auto;
   overflow: hidden;
-  width: 600px;
+  width: 640px;
 }
 
-.slider__container {
+.slide-container {
   display: flex;
-  height: 400px;
-  transform: translate(0);
+  height: 360px;
   transition: transform 0.8s ease;
 }
 
-.slider__container img {
+.slide-container img {
+  object-fit: cover;
   width: 100%;
+}
+
+.slide-controls {
+  display: flex;
+  justify-content: center;
+  margin-top: 0.75rem;
+}
+
+.prev,
+.pause,
+.next {
+  background: transparent;
+  border: transparent;
+  font-size: 2rem;
+}
+
+.dots-container {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+}
+
+.dot {
+  background: lightgray;
+  border-radius: 50%;
+  cursor: pointer;
+  height: 20px;
+  margin: 5px;
+  width: 20px;
+}
+
+.active {
+  border: 2px solid royalblue;
 }
