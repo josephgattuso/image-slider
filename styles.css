@@ -30,3 +30,7 @@ body {
   transform: translate(0);
   transition: transform 0.8s ease;
 }
+
+.slider__container img {
+  width: 100%;
+}
