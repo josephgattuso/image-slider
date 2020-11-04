@@ -25,7 +25,7 @@ document.querySelector(".prev").addEventListener("click", (e) => {
   init(currentSlide);
 });
 
-setInterval(() => {
+let slideInterval = setInterval(() => {
   next();
 }, 5000);
 
@@ -41,26 +41,26 @@ document.addEventListener("DOMContentLoaded", init(currentSlide));
 
 // Button controls
 
-// let playing = true;
+let playing = true;
 // let slideInterval = setInterval(next, 5000);
-// const pauseButton = document.getElementById("pause");
+const pauseButton = document.getElementById("pause");
 
-// const pauseSlides = () => {
-//   pauseButton.innerHTML = "▶️";
-//   playing = false;
-//   clearInterval(slideInterval);
-// };
+const pauseSlides = () => {
+  pauseButton.innerHTML = "▶️";
+  playing = false;
+  clearInterval(slideInterval);
+};
 
-// const playSlides = () => {
-//   pauseButton.innerHTML = "⏸";
-//   playing = true;
-//   slideInterval = setInterval(nextSlide, 5000);
-// };
+const playSlides = () => {
+  pauseButton.innerHTML = "⏸";
+  playing = true;
+  slideInterval = setInterval(next, 5000);
+};
 
-// pauseButton.onclick = function () {
-//   if (playing) {
-//     pauseSlides();
-//   } else {
-//     playSlides();
-//   }
-// };
+pauseButton.onclick = function () {
+  if (playing) {
+    pauseSlides();
+  } else {
+    playSlides();
+  }
+};

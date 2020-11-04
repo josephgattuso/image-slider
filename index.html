@@ -12,12 +12,18 @@
     <link rel="apple-touch-icon" href="./img/logo192.png" />
     <link rel="manifest" href="./manifest.json" />
     <title>Image Slider</title>
-    <!-- APIs -->
     <!-- CSS -->
     <link rel="stylesheet" href="./styles.css" />
   </head>
   <body>
-    <h1>Image Slider</h1>
+    <div class="header">
+      <h1>Image Slider</h1>
+      <h2>
+        <button type="button" class="pause" id="pause">
+          <span role="img" aria-label="pause">⏸</span>
+        </button>
+      </h2>
+    </div>
     <div class="img-container">
       <div class="slide">
         <img
@@ -49,17 +55,16 @@
           alt="orange"
         />
       </div>
-      <!-- <button type="button" class="prev">
-          <span role="img" aria-label="previous">⏪</span>
-        </button>
-        <button type="button" class="pause" id="pause">
-          <span role="img" aria-label="pause">⏸</span>
-        </button>
-        <button type="button" class="next">
-          <span role="img" aria-label="next">⏩</span>
-        </button> -->
       <a href="#!" class="prev">&#10094;</a>
       <a href="#!" class="next">&#10095;</a>
+      <!-- 
+        <button type="button" class="prev">
+          <span role="img" aria-label="previous">⏪</span>
+        </button> 
+        <button type="button" class="next">
+          <span role="img" aria-label="next">⏩</span>
+        </button> 
+      -->
     </div>
     <div class="dots-container">
       <span class="dot active"></span>
