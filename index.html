@@ -18,24 +18,38 @@
   </head>
   <body>
     <h1>Image Slider</h1>
-    <div class="slider">
-      <!-- prettier-ignore -->
-      <div class="slide-container">
-        <img class='slide' src="https://source.unsplash.com/collection/212/1280x640" alt="blue" />
-        <img class='slide' src="https://source.unsplash.com/collection/213/1280x640" alt="pink" />
-        <img class='slide' src="https://source.unsplash.com/collection/214/1280x640" alt="green" />
-        <img class='slide' src="https://source.unsplash.com/collection/217/1280x640" alt="red" />
-        <img class='slide' src="https://source.unsplash.com/collection/218/1280x640" alt="orange" />
+    <div class="img-container">
+      <div class="slide">
+        <img
+          src="https://source.unsplash.com/collection/212/1280x640"
+          alt="blue"
+        />
       </div>
-      <div class="dots-container">
-        <span class="dot active"></span>
-        <span class="dot"></span>
-        <span class="dot"></span>
-        <span class="dot"></span>
-        <span class="dot"></span>
+      <div class="slide">
+        <img
+          src="https://source.unsplash.com/collection/213/1280x640"
+          alt="pink"
+        />
       </div>
-      <div class="slide-controls">
-        <button type="button" class="prev">
+      <div class="slide">
+        <img
+          src="https://source.unsplash.com/collection/214/1280x640"
+          alt="green"
+        />
+      </div>
+      <div class="slide">
+        <img
+          src="https://source.unsplash.com/collection/217/1280x640"
+          alt="red"
+        />
+      </div>
+      <div class="slide">
+        <img
+          src="https://source.unsplash.com/collection/218/1280x640"
+          alt="orange"
+        />
+      </div>
+      <!-- <button type="button" class="prev">
           <span role="img" aria-label="previous">⏪</span>
         </button>
         <button type="button" class="pause" id="pause">
@@ -43,8 +57,16 @@
         </button>
         <button type="button" class="next">
           <span role="img" aria-label="next">⏩</span>
-        </button>
-      </div>
+        </button> -->
+      <a href="#!" class="prev">&#10094;</a>
+      <a href="#!" class="next">&#10095;</a>
+    </div>
+    <div class="dots-container">
+      <span class="dot active"></span>
+      <span class="dot"></span>
+      <span class="dot"></span>
+      <span class="dot"></span>
+      <span class="dot"></span>
     </div>
     <!-- Scripts -->
     <script src="./script.js"></script>

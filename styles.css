@@ -1,70 +1,91 @@
-html {
+* {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
   font-size: 16px;
 }
 
 body {
   background: #fafafa;
-  color: #222;
+  color: #333;
   font-family: system-ui, sans-serif;
   font-size: 1rem;
 }
 
 h1 {
+  margin-top: 3rem;
   text-align: center;
 }
 
+.img-container {
+  display: grid;
+  margin: auto;
+  max-width: 1000px;
+  min-height: 100%;
+  padding-top: 3rem;
+  place-items: center;
+  position: relative;
+}
+
+.slide {
+  display: none;
+}
+
 img {
-  display: block;
-}
-
-.slider {
-  display: flex;
-  flex-direction: column;
-  margin: 0 auto;
-  overflow: hidden;
-  width: 640px;
-}
-
-.slide-container {
-  display: flex;
-  height: 360px;
-  transition: transform 0.8s ease;
-}
-
-.slide-container img {
-  object-fit: cover;
   width: 100%;
-}
-
-.slide-controls {
-  display: flex;
-  justify-content: center;
-  margin-top: 0.75rem;
 }
 
 .prev,
 .pause,
 .next {
-  background: transparent;
-  border: transparent;
-  font-size: 2rem;
+  color: lightgray;
+  cursor: pointer;
+  font-size: 4rem;
+  font-weight: bold;
+  margin-top: -22px;
+  padding: 0.75rem;
+  position: absolute;
+  text-decoration: none;
+  top: 50%;
+  transition: all 0.6s ease;
+  user-select: none;
+  width: auto;
+}
+
+.prev:hover,
+.pause:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+}
+
+.prev {
+  border-radius: 0 5px 5px 0;
+  left: 2px;
+}
+
+.next {
+  border-radius: 5px 0 0 5px;
+  right: 2px;
 }
 
 .dots-container {
   align-items: center;
   display: flex;
   justify-content: center;
-  padding: 10px;
+  padding: 1rem;
 }
 
 .dot {
   background: lightgray;
   border-radius: 50%;
   cursor: pointer;
-  height: 20px;
-  margin: 5px;
-  width: 20px;
+  height: 1.25rem;
+  margin: 0.25rem;
+  width: 1.25rem;
 }
 
 .active {
