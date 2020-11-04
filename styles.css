@@ -15,7 +15,9 @@ body {
   text-align: center;
 }
 
-.pause {
+.prev,
+.pause,
+.next {
   background: transparent;
   border: transparent;
   font-size: 2rem;
@@ -40,6 +42,7 @@ img {
   width: 100%;
 }
 
+/* 
 .prev,
 .next {
   color: lightgray;
@@ -71,6 +74,8 @@ img {
   border-radius: 5px 0 0 5px;
   right: 2px;
 }
+
+ */
 
 .dots-container {
   align-items: center;
